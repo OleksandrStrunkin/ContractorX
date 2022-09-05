@@ -1,0 +1,51 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.section{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    // outline: solid tomato;
+}
+.button{
+font-weight: 400;
+font-size: 18px;
+line-height:calc(20 / 18);
+text-align: center;
+color: #191919;
+background-color: transparent;
+width: 175px;
+height: 75px;
+border-radius: 2px;
+border: 2px solid #191919;
+cursor: pointer;
+transition: background-color 500ms, color 500ms;
+&:hover{
+    color: #FFFFFF;
+    background-color: var(--btn-color);
+}
+}
+.title-signature{
+    font-size: 20px;
+    line-height: calc(22 / 20);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #FF4D01;
+    color: var(--title-s-color);
+    margin-bottom: 15px;
+}
+.title{
+    font-weight: 400;
+    font-size: 54px;
+    line-height: calc(62 / 54);
+    color: var(--text-color);
+    margin-bottom: 19px;
+}
+.text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    color: #605E5D;
+
+}

@@ -18,23 +18,36 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-list__item"><a href="">Home</a></li>
-          <li class="nav-list__item"><a href="">About</a></li>
-          <li class="nav-list__item"><a href="">Blog</a></li>
-          <li class="nav-list__item"><a href="">Pages</a></li>
-        </ul>
-      </nav>
-      <ul class="contact-header">
-        <li><a href="">Contact</a></li>
-        <li><a href="">Cart (0)</a></li>
-      </ul>
-      <button type="button">Get a quote</button>
+    <header class="header">
+      <div class="container">
+        <div class="nav-box">
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="" class="header__link">Home</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="header__link">About</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="header__link">Blog</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="header__link">Pages</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact-header">
+            <li><a href="" class="header__link">Contact</a></li>
+            <li><a href="" class="header__link">Cart (0)</a></li>
+            <li><a href="" class="header-btn">Get a quote</a></li>
+          </ul>
+        </div>
+        <!-- <button type="button" class="header-btn">Get a quote</button> -->
+      </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero-title">We provide effective contracting services</h1>
           <p class="hero-text">
@@ -42,119 +55,138 @@
             varius rhoncus, nullam pulvinar ut sollicitudin dictumst porttitor
             porttitor quis quisque erat.
           </p>
-          <button type="button">Get a quote</button>
-          <button type="button">Our services</button>
+          <button type="button" class="button hero__btn">Get a quote</button>
+          <button type="button" class="button hero__btn">Our services</button>
         </div>
       </section>
-      <section class="about">
-        <div class="comtainer">
-          <p class="title-signature">/About Us</p>
-          <h2 class="title">A team of reliable and experienced contractors</h2>
-          <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
-            imperdiet nisi metus, viverra nulla aliquet dui porta porttitor
-            neque lectus diam justo lobortis purus in elit, elementum dignissim
-            nullam vitae pellentesque aliquet aliquam sagittis pulvinar egestas
-            morbi suspendisse eleifend.
-          </p>
-          <ul>
-            <li>
-              <span>+350</span>
-              <p>Executed Projects</p>
-            </li>
-            <li>
-              <span>12Y</span>
-              <p>Experience</p>
-            </li>
-            <li>
-              <span>+400</span>
-              <p>Satisfied Clients</p>
-            </li>
-          </ul>
-          <button type="button">About our company</button>
+      <section class="section about">
+        <div class="container about-container">
+          <div class="about-box">
+            <img src="./images/about-img.jpg" alt="man work" width="479" />
+            <div class="about-frame"></div>
+          </div>
+          <div class="about-content">
+            <p class="title-signature">/About Us</p>
+            <h2 class="title about-title">
+              A team of reliable and experienced contractors
+            </h2>
+            <p class="text about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
+              imperdiet nisi metus, viverra nulla aliquet dui porta porttitor
+              neque lectus diam justo lobortis purus in elit, elementum
+              dignissim nullam vitae pellentesque aliquet aliquam sagittis
+              pulvinar egestas morbi suspendisse eleifend.
+            </p>
+            <ul class="about-list">
+              <li>
+                <span class="about-list__figure"><span>+</span>350</span>
+                <p class="about-list__text">Executed Projects</p>
+              </li>
+              <li>
+                <span class="about-list__figure">12<span>Y</span></span>
+                <p class="about-list__text">Experience</p>
+              </li>
+              <li>
+                <span class="about-list__figure"><span>+</span>400</span>
+                <p class="about-list__text">Satisfied Clients</p>
+              </li>
+            </ul>
+            <button type="button" class="button about-button">
+              About our company
+            </button>
+          </div>
         </div>
       </section>
-      <section class="services">
+      <section class="section services">
         <div class="container">
           <p class="title-signature">/Our Services</p>
-          <h2 class="title">A comprehensive set of services</h2>
-          <button type="button">Get a quote</button>
-          <button type="button">Browse services</button>
-          <ul>
+          <div class="services-box">
+            <h2 class="title">A comprehensive set of services</h2>
+            <div>
+              <button type="button" class="button services-btn">
+                Get a quote
+              </button>
+              <button type="button" class="button services-btn">
+                Browse services
+              </button>
+            </div>
+          </div>
+          <ul class="services-list">
             <li>
-              <img src="" alt="" />
-              <h3>Project Planning</h3>
-              <p>
+              <img src="/images/services/project-planning.svg" alt="" />
+              <h3 class="services-list__title">Project Planning</h3>
+              <p class="services-list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
                 eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.
               </p>
-              <p>Learn more</p>
+              <p class="services-list__link">Learn more</p>
             </li>
             <li>
-              <img src="" alt="" />
-              <h3>Project Management</h3>
-              <p>
+              <img src="/images/services/project-planning.svg" alt="" />
+              <h3 class="services-list__title">Project Management</h3>
+              <p class="services-list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
                 eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.
               </p>
-              <p>Learn more</p>
+              <p class="services-list__link">Learn more</p>
             </li>
             <li>
-              <img src="" alt="" />
-              <h3>General Contracting</h3>
-              <p>
+              <img src="/images/services/project-management.svg" alt="" />
+              <h3 class="services-list__title">General Contracting</h3>
+              <p class="services-list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
                 eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.
               </p>
-              <p>Learn more</p>
+              <p class="services-list__link">Learn more</p>
             </li>
             <li>
-              <img src="" alt="" />
-              <h3>Interior Design</h3>
-              <p>
+              <img src="/images/services/general-contracting.svg" alt="" />
+              <h3 class="services-list__title">Interior Design</h3>
+              <p class="services-list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
                 eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.
               </p>
-              <p>Learn more</p>
+              <p class="services-list__link">Learn more</p>
             </li>
             <li>
-              <img src="" alt="" />
-              <h3>Exterior Design</h3>
-              <p>
+              <img src="/images/services/exterior-design.svg" alt="" />
+              <h3 class="services-list__title">Exterior Design</h3>
+              <p class="services-list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
                 eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.
               </p>
-              <p>Learn more</p>
+              <p class="services-list__link">Learn more</p>
             </li>
             <li>
-              <img src="" alt="" />
-              <h3>Space Planning</h3>
-              <p>
+              <img src="/images/services/space-planning.svg" alt="" />
+              <h3 class="services-list__title">Space Planning</h3>
+              <p class="services-list__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
                 eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.
               </p>
-              <p>Learn more</p>
+              <p class="services-list__link">Learn more</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="question">
-        <div class="cantainer">
+      <section class="section question">
+        <div class="container">
           <h2 class="title">Ready to pull the trigger? Get a quote today.</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit
+            varius rhoncus, nullam pulvinar ut sollicitudin dictumst porttitor
+            porttitor quis.
+          </p>
+          <button type="button" class="button">Get a quote</button>
+          <button type="button" class="button">Our services</button>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit
-          varius rhoncus, nullam pulvinar ut sollicitudin dictumst porttitor
-          porttitor quis.
-        </p>
-        <button type="button">Get a quote</button>
-        <button type="button">Our services</button>
       </section>
-      <section class="benefits">
-        <div class="cantainer">
+      <section class="section benefits">
+        <div class="container">
           <p class="title-signature">/Why Choose Us</p>
           <h2 class="title">A team of reliable and experienced contractors</h2>
-          <p class="benefits-text">
+          <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
             imperdiet nisi metus, viverra nulla aliquet dui porta porttitor
             neque lectus diam justo lobortis purus in elit, elementum dignissim
@@ -169,7 +201,7 @@
           <h2 class="title">
             We help you build on your past and prepare for the future
           </h2>
-          <p class="benefits-text">
+          <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit dictum nam
             arcu ac eu orci purus amet eros, id lorem aliquet eget urna at risus
             sit purus ac magnis blandit eu egestas imperdiet libero.
@@ -186,12 +218,12 @@
           </ul>
         </div>
       </section>
-      <section class="projects">
+      <section class="section projects">
         <div class="container">
           <p class="title-signature">/Past Projects</p>
           <h2 class="title">Our project results speak for themselves</h2>
-          <button type="button">Get a quote</button>
-          <button type="button">Browse services</button>
+          <button type="button" class="button">Get a quote</button>
+          <button type="button" class="button">Browse services</button>
           <ul>
             <li>
               <img src="" alt="" />
@@ -214,12 +246,12 @@
           </ul>
         </div>
       </section>
-      <section class="testimonials">
+      <section class="section testimonials">
         <div class="container">
           <p class="title-signature">/Testimonials</p>
           <h2 class="title">What our clients say about us and our work</h2>
-          <button type="button">Get a quote</button>
-          <button type="button">Browse services</button>
+          <button type="button" class="button">Get a quote</button>
+          <button type="button" class="button">Browse services</button>
           <ul>
             <li>
               <img src="" alt="" />
@@ -246,11 +278,11 @@
           </ul>
         </div>
       </section>
-      <section class="blog">
+      <section class="section blog">
         <div class="container">
           <p class="title-signature">/Blog</p>
           <h2 class="title">Articles & News</h2>
-          <button type="button">Browse services</button>
+          <button type="button" class="button">Browse services</button>
           <ul>
             <li>
               <img src="" alt="" />
