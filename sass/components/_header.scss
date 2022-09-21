@@ -26,7 +26,12 @@
 font-size: 18px;
 line-height: calc(30 / 18);
 color: #FFFFFF;
+border: none;
+transition: var(--transition-function);
+
 &:hover{
+    border-radius: 5px;
+    background-color: #ff4d012a;
     color: rgba(253, 253, 253, 0.774);
 }
 }
