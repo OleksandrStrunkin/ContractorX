@@ -134,11 +134,13 @@ a {
   line-height: 1.6666666667;
   color: #FFFFFF;
   border: none;
+  padding: 5px 10px;
   -webkit-transition: var(--transition-function);
   transition: var(--transition-function);
 }
 .header__link:hover {
   border-radius: 5px;
+  padding: 5px 10px;
   background-color: rgba(255, 77, 1, 0.1647058824);
   color: rgba(253, 253, 253, 0.774);
 }
